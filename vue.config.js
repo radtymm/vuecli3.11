@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
     /** 区分打包环境与开发环境
    * process.env.NODE_ENV==='production'  (打包环境)
@@ -11,8 +13,7 @@ module.exports = {
   // 指定子路径。比如将你的应用部署在
   // https://www.foobar.com/my-app/
   // 那么将这个值改为 '/my-app/'
-  publicPath: "/vuecli3.11/dist/", // 构建好的文件输出到哪里
-
+  publicPath: "/", // 构建好的文件输出到哪里
   outputDir: "dist", // where to put static assets (js/css/img/font/...) // 是否在保存时使用‘eslint-loader’进行检查 // 有效值: true | false | 'error' // 当设置为‘error’时，检查出的错误会触发编译失败
   configureWebpack: () => {}, // CSS 相关选项
   devServer: {
